@@ -161,7 +161,7 @@ ul.main-menu li a.active {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #3498DB;
+  background-color: #04AA6D;
   color: white;
 }
 
