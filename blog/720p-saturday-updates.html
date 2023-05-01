@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 <style>
 * {
   box-sizing: border-box;
@@ -67,14 +68,16 @@
 
 
 </head>
-<body>
-<div class="topnav">
-  <a class="active" href="../Home.html">Home</a>
-</div>
-
-    <header id="header">
-      <img src="javsubs91.gif">
-      <h4>720p UPDATE (April, 29-30 ~ May, 01)</h4>
+	
+<header id="header">
+<a href="../Home.html"><button class="btn"><i class="fa fa-home"></i> Home</button>
+</a>
+<br>
+<br>
+<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+    <script src="index.js"></script>
+<h5>720p UPDATE (April, 29-30 ~ May, 01)</h5>
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
       <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
       <ul class="main-menu">
         <li><a href="#Latest">Latest</a></li>
