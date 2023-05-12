@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+<style>
+</style>
+
+    <!-- Page setup -->
+    <meta charset="utf-8">
+    <title>j91 - May 13</title>
+    <meta name="description" content="A brief description of your site for search engines">
+    <meta name="author" content="Information about the author here">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="icon" href="https://raw.githubusercontent.com/hd-720p/test-blog/gh-pages/favicon.ico">
+    
+
+  
+    <!-- Stylesheets -->
+    <!-- Reset default styles and add support for google fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+   
+    <!-- Custom styles -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+
+    <!-- Want to add Bootstrap? -->
+    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+
+
+</head>
+	
+<header id="header">
+<!-- <form>  -->
+<!-- <select id="lang-switch" style="float: right;">  -->
+        <!-- <option value="en">English</option>  -->
+       <!--  <option value="jp" selected>日本語</option>  -->
+    <!-- </select>  -->
+<!-- </form>  -->
+<a href="../Home.html"><button class="btn"><i class="fa fa-home"></i> Home</button>
+</a>
+<br>
+<br>
+<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+    <script src="index.js"></script>
+<h5>720p Updates (May, 13)</h5>
+<hr style="height:1px;border-width:0;color:gray;background-color:gray">
+      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
+      <ul class="main-menu">
+        <li><a href="#Latest">Latest</a></li>
+        <li><a href="#Main">Main</a></li>
+        <li><a href="#Recent">Recent</a></li>
+      </ul>                 
+    </header>
+   
+    <div id="container">
+      <div class="inner">
+        <div id="content"> 
+		
+
+<div id="Latest" class="content-region hide">
+<center>
+
+
+
+
+</center>
+
+
+</div>
+
+<div id="Main" class="content-region hide">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for titles.." title="Type in a name">
+<p style="font-size:50px;">Please Wait...</p>
+<ul id="myUL">
+
+</ul>
+          </div>
+
+<div id="Recent" class="content-region hide">
+<center>
+
+</center>
+
+
+</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>  
+<br>
+
+    </footer>
+    
+    <!-- Load additional JS scripts here -->
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="lang.js"></script>
+
+	
+<script>
+function myFunction() {
+    var input, filter, ul, p, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("p");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+  </body>
+</html>
