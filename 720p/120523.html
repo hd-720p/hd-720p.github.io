@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+<script src="/js/prebid-ads.js"></script>
 <style>
 </style>
 
@@ -649,6 +650,11 @@ setTimeout(() => {
     alert("DISABLE YOUR ADBLOCK NOW OR GET AWAY FROM MY SITE!");
 }, 3000)
 </script>
-
+<script>
+      if( window.canRunAds === undefined ){
+        // adblocker detected, show fallback
+        showFallbackImage();
+      }
+</script>
   </body>
 </html>
