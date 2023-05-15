@@ -284,9 +284,15 @@ data-idzone="4972066" src="https://a.realsrv.com/nativeads-v2.js"
 
 <script>
 setTimeout(() => {
+  if (document.getElementById('myTestAd').clientHeight == 0)
+    alert("PLEASE DISABLE YOUR ADB!");
+}, 1000)
+</script>
+<script>
+setTimeout(() => {
   if (document.getElementById('j91').clientHeight == 0)
         window.location = '/fuckadb/130523.html';
-}, 3000)
+}, 4000)
 </script>
 
 <script>
