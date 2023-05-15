@@ -67,8 +67,8 @@
 
 
 <div id="tape" class="content-region hide">
-<input type="text" id="tape" onkeyup="myFunction()" placeholder="Search for titles.." title="Type in a name">
-<ul id="myUL">
+<input type="text" id="tapeinp" onkeyup="myFunction()" placeholder="Search for titles.." title="Type in a name">
+<ul id="tape">
 <p><a href="https://streamtape.to/v/bw2B2W1j9RiPZkQ/C-2763.mp4">C-2763.mp4</a></p>
 <p><a href="https://streamtape.to/v/V8k61eLPJ7tyQD/C-2762.mp4">C-2762.mp4</a></p>
 <p><a href="https://streamtape.to/v/ylbGeWe06oI1RZe/GS-2059.mp4">GS-2059.mp4</a></p>
@@ -192,6 +192,25 @@ function myFunction() {
     input = document.getElementById("sbinp");
     filter = input.value.toUpperCase();
     ul = document.getElementById("sb");
+    li = ul.getElementsByTagName("p");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+	
+<script>
+function myFunction() {
+    var input, filter, ul, p, a, i, txtValue;
+    input = document.getElementById("tapeinp");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("tape");
     li = ul.getElementsByTagName("p");
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
