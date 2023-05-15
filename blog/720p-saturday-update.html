@@ -325,15 +325,10 @@ function myFunction() {
 </script>
 
 <script>
-function blockAdblockUser() {
-    if ($('.myTestAd').height() == 0) {
+setTimeout(() => {
+  if (document.getElementById('myTestAd').clientHeight == 0)
         window.location = 'http://example.com/AdblockNotice.html';
-    }
-}
-
-$(document).ready(function(){
-    blockAdblockUser();
-});
+}, 3000)
 </script>
   </body>
 </html>
