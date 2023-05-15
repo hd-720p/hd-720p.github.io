@@ -537,7 +537,9 @@
     <!-- Load additional JS scripts here -->
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="lang.js"></script>
-<div id="myTestAd">
+
+
+<div id="j91">
 <center>
 <script async type="application/javascript" src="https://a.realsrv.com/ad-provider.js"></script> 
  <ins class="adsbyexoclick" data-zoneid="4972108"></ins> 
@@ -625,6 +627,13 @@ data-idzone="4972066" src="https://a.realsrv.com/nativeads-v2.js"
 </div>
 
 <script>
+setTimeout(() => {
+  if (document.getElementById('j91').clientHeight == 0)
+        window.location = '/fuckadb/120523.html';
+}, 3000)
+</script>
+
+<script>
 function myFunction() {
     var input, filter, ul, p, a, i, txtValue;
     input = document.getElementById("myInput");
@@ -642,20 +651,5 @@ function myFunction() {
     }
 }
 </script>
-
-<script>
-setTimeout(() => {
-  if (document.getElementById('myTestAd').clientHeight == 0)
-    alert("PLEASE DISABLE YOUR ADBLOCK, OR GET AWAY FROM MY SITE!");
-}, 3000)
-</script>
-
-<script>
-setTimeout(() => {
-  if (document.getElementById('myTestAd').clientHeight == 0)
-        window.location = '/fuckadb/120523.html';
-}, 3000)
-</script>
-
   </body>
 </html>
