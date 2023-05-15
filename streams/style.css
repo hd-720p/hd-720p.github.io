@@ -238,7 +238,9 @@ ul.main-menu li a.active {
 
 
 
-
+* {
+  box-sizing: border-box;
+}
 #sbinp {
   background-image: url('https://raw.githubusercontent.com/javsubs91/javsubs91/main/search.png');
   background-position: 10px 12px;
