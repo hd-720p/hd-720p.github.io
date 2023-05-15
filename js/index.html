@@ -1,28 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
+
 <head>
-    <title>Adblock detecter | By Code Info</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Test Adblock Detection</title>
+  <meta name="description" content="Test Adblock Detection">
+  <meta name="author" content="Nikolai Tschacher">
 </head>
+
 <body>
-   
-    <div class="wrapper">
-        <img src="pic/logo.png">
-        <p class="detect">Detecting...</p>
-        <p class="ad-p">Please wait!</p>
-    </div>
+  <script type="text/javascript" src="dist/adblockDetector.min.js"></script>
 
-    <script src="main.js"></script>
-<center>
-<script async type="application/javascript" src="https://a.realsrv.com/ad-provider.js"></script> 
- <ins class="adsbyexoclick" data-zoneid="4972108"></ins> 
- <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
-
-<script type="application/javascript">
-(function() {
-
-    //version 1.0.0
-
+  <script type="text/javascript">
+    detectAdblock().then((res) => {
+      alert(`Using Adblockers: ${JSON.stringify(res)}`);
+    });
+  </script>
+    
     var adConfig = {
     "ads_host": "a.realsrv.com",
     "syndication_host": "syndication.realsrv.com",
