@@ -43,6 +43,7 @@
       <ul class="main-menu">
         <li><a href="#sb">STREAMSB</a></li>
         <li><a href="#tape">STREAMTAPE</a></li>
+        <li><a href="#lions">LIONS</a></li>
       </ul>                 
     </header>
    
@@ -56,8 +57,12 @@
 <hr style="height:2px;border-width:0;color:gray;background-color:gray">	
 <br>
 <ul id="sb">
-
-
+<p><a href="https://lvturbo.com/ux2nyjwk2rvl.html">asia-100</a></p>
+<p><a href="https://lvturbo.com/nj85d0gbhpqt.html">bab-090</a></p>
+<p><a href="https://lvturbo.com/vdyoz7in6cj9.html">bst-029</a></p>
+<p><a href="https://lvturbo.com/h2jh7x05zi5c.html">C-2761</a></p>
+<p><a href="https://lvturbo.com/pchm5b4xqax6.html">C-2762</a></p>
+<p><a href="https://lvturbo.com/acai9yydl7d4.html">C-2763</a></p>
 </ul>
           </div>
 
@@ -67,6 +72,30 @@
 <hr style="height:2px;border-width:0;color:gray;background-color:gray">	
 <br>
 <ul id="tape">
+<p><a href="https://lvturbo.com/d5zzy81sv1b7.html">erdm-041</a></p>
+<p><a href="https://lvturbo.com/u9wrygkdrrq6.html">erdm-042</a></p>
+<p><a href="https://lvturbo.com/25adewdefkl0.html">erdm-043</a></p>
+<p><a href="https://lvturbo.com/5057psq4i0en.html">erdm-044</a></p>
+<p><a href="https://lvturbo.com/iy635tbd7lja.html">erdm-045</a></p>
+<p><a href="https://lvturbo.com/437lzt2o6u2n.html">evis-469</a></p>
+<p><a href="https://lvturbo.com/79y0yei5b310.html">evis-470</a></p>
+</ul>
+          </div>
+		
+		
+<div id="lions" class="content-region hide">
+<input type="text" id="lionsinp" onkeyup="lionsFunction()" placeholder="Search for titles.." title="Type in a name">
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">	
+<br>
+<ul id="lions">
+<p><a href="https://lvturbo.com/e75jqqwcx88u.html">FLAV-324</a></p>
+<p><a href="https://lvturbo.com/lfqbxaek5vkg.html">FLAV-324</a></p>
+<p><a href="https://lvturbo.com/anz8ivlwtfeo.html">grd-114</a></p>
+<p><a href="https://lvturbo.com/a341kpj8t9rh.html">GS-2059</a></p>
+<p><a href="https://lvturbo.com/v74bfmfm70r9.html">gvh-540</a></p>
+<p><a href="https://lvturbo.com/53932km6bjvj.html">gvh-541</a></p>
+<p><a href="https://lvturbo.com/ehti1a8vxj1g.html">halt-028</a></p>
+<p><a href="https://lvturbo.com/1xrzajcuyrgd.html">hkd-142</a></p>
 
 </ul>
           </div>
@@ -215,6 +244,27 @@ function tapeFunction() {
     }
 }
 </script>
+
+<script>
+function lionsFunction() {
+    var input, filter, ul, p, a, i, txtValue;
+    input = document.getElementById("lionsinp");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("lions");
+    li = ul.getElementsByTagName("p");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>	
+	
+	
 	
 <script>
  document.addEventListener("contextmenu", function (e) {
