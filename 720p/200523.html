@@ -88,6 +88,8 @@
 		
           <div id="sat" class="content-region hide">
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for titles.." title="Type in a name">
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">	
+<br>
 <ul id="myUL">
 <p>	<a href="https://userscloud.com/istr0zfosf87" target=_blank>AGAV-088.mp4 - 1.5 GB</a>	</p>
 <p>	<a href="https://userscloud.com/q4yorxzestre" target=_blank>AGMX-146.mp4 - 1.1 GB</a>	</p>
@@ -211,8 +213,10 @@
 		  
 		  
           <div id="sun" class="content-region hide">
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for titles.." title="Type in a name">
-<ul id="myUL">
+<input type="text" id="lionsinp" onkeyup="lionsFunction()" placeholder="Search for titles.." title="Type in a name">
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">	
+<br>
+<ul id="lions">
 <p>	<a href="https://userscloud.com/qcv5tisg9t36" target=_blank>328HMDSX-017.mp4 - 2.9 GB</a>	</p>
 <p>	<a href="https://userscloud.com/p3si70qzkscv" target=_blank>700VOBB-015.mp4 - 2.0 GB</a>	</p>
 <p>	<a href="https://userscloud.com/8p9x6gb0a667" target=_blank>700VOTAN-041.mp4 - 1.1 GB</a>	</p>
@@ -338,6 +342,26 @@ function myFunction() {
     }
 }
 </script>
+
+<script>
+function lionsFunction() {
+    var input, filter, ul, p, a, i, txtValue;
+    input = document.getElementById("lionsinp");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("lions");
+    li = ul.getElementsByTagName("p");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
 
 <div id="j91">
 <center>
