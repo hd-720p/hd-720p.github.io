@@ -22,6 +22,82 @@ var $rating = 0;
 <!-- ********* End of Custom Header *********  -->
 </head>
 <body class="main">
+<!-- ********* Start of Top Menu *********  -->
+<div id="topmenu">
+	<div class="searchbar">
+		<form name="searchbar" method="get" action="https://javlibrary.com/en/vl_searchbyid.php">
+		<table>
+		<tr>
+			<td>
+				<input type="text" name="keyword" id="idsearchbox" value="" />
+				<div id="idsearchboxmask" >&lt;e.g. TT-013&gt;</div>
+			</td>
+			<td><input type="button" value="ID Search" id="idsearchbutton" /></td>
+			<td class="advsearch">&nbsp;&nbsp;[<a href="search.php">Advanced Search</a>]</td>
+			<td>
+			</td>
+		</tr>
+		</table>
+		</form>
+	</div class="searchbar">
+	<div class="menutext">
+		<script type="text/javascript">
+		<!--
+		if (getCookie("session") == null || getCookie("userid") == null ) {
+			document.write('<a href="login.php">Sign in</a> | <a href="register.php">Sign up</a>');
+		} else {
+			if (getCookie("hasmsg") == null) {
+				document.write('<a href="myaccount.php">My Account</a> | <a href="pm_inbox.php">Inbox</a> | <a href="logout.php">Logout</a>');
+			} else {
+				document.write('<a href="myaccount.php">My Account</a> | <img src="../img/img_star.gif" width="25" height="25" border="0" style="vertical-align: middle;"><a href="pm_inbox.php">Inbox</a> | <a href="logout.php">Logout</a>');
+			}
+		}			
+		//-->
+		</script>
+	</div class="menutext">
+</div id="topmenu">
+<div id="toplogo">
+	<div class="sitelogo">
+		<a href="https://javlibrary.com" rel='bookmark'><img src="https://streamsb.com/d5/images/logo.svg" width="350" height="50" border="0" title="Jav Library.com - Japanese Adult Video Library"></a>
+	</div class="sitelogo">
+	<div class="topbanner1" id="topbanner11" style="position:absolute; left:380px; top:5px; width:728px; height:92px; overflow:hidden;">
+	<script type='text/javascript' src='https://javlibrary.com/js/bnr_xlivrdr_1.js?1687168800'></script>	</div class="topbanner">
+		<div class="languagemenu">
+	言語:
+	<select onChange="if (document.location.href.toLowerCase().indexOf('u65w.com') >= 0) {	document.location.replace(document.location.href.replace(/&page=[0-9]+/i, '').replace('u65w.com/en/', 'u65w.com/'+this.options[selectedIndex].value+'/'));} else if (document.location.href.toLowerCase().indexOf('a66j.com') >= 0) {	document.location.replace(document.location.href.replace(/&page=[0-9]+/i, '').replace('a66j.com/en/', 'a66j.com/'+this.options[selectedIndex].value+'/'));} else if (document.location.href.toLowerCase().indexOf('h68g.com') >= 0) {	document.location.replace(document.location.href.replace(/&page=[0-9]+/i, '').replace('h68g.com/en/', 'h68g.com/'+this.options[selectedIndex].value+'/'));} else if (document.location.href.toLowerCase().indexOf('d67b.com') >= 0) {	document.location.replace(document.location.href.replace(/&page=[0-9]+/i, '').replace('d67b.com/en/', 'd67b.com/'+this.options[selectedIndex].value+'/'));} else {document.location.replace(document.location.href.replace(/&page=[0-9]+/i, '').replace('javlibrary.com/en/', 'javlibrary.com/'+this.options[selectedIndex].value+'/'));}">
+		<option value="en">English</option>
+		<option value="ja" >日本語</option>
+		<option value="cn" >简体中文</option>
+		<option value="tw" >正體中文</option>
+	</select>
+	</div class="languagemenu">
+	</div id="toplogo">
+<!-- ********* End of Top Menu *********  -->
+
+<div id="content">
+<!-- ********* Start of Content *********  -->
+<div id="leftmenu">
+<div class="menul1"><div class="category">Videos</div>
+<ul>
+	<li><a href="https://javlibrary.com/vl_update.php">New Comments</a></li>
+	<li><a href="https://javlibrary.com/vl_newrelease.php">New Releases</a></li>
+	<li><a href="https://javlibrary.com/vl_newentries.php">New Entries</a></li>
+	<li><a href="https://javlibrary.com/vl_mostwanted.php">Most Wanted</a></li>
+	<li><a href="https://javlibrary.com/vl_bestrated.php">Best Rated</a></li>
+	<li><a href="https://javlibrary.com/search.php">Advanced Search</a></li>
+	<li><a href="https://javlibrary.com/genres.php">Categories</a></li>
+</ul>
+<div class="category">Stars</div>
+<ul>
+	<li><a href="https://javlibrary.com/star_mostfav.php">Ranking</a></li>
+	<li><a href="https://javlibrary.com/star_list.php?prefix=A">Directory</a></li>
+</ul>
+<div class="category">Participate</div>
+<ul>
+	<li><a href="https://javlibrary.com/tl_bestreviews.php">Best Reviews</a></li>
+	<!-- <li><a href="https://javlibrary.com/topmembers.php">Top Members</a></li> -->
+	<li><a href="https://javlibrary.com/publicgroups.php">Forum</a></li>
+</ul></div><!-- end of menu -->
 
 <table style="margin:auto;"><tr><td>
 <div class="sidebanner1" id="sidebanner11" style="position:relative; width:160px; height:602px; overflow:hidden;">
